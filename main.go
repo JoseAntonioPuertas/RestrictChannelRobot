@@ -206,9 +206,7 @@ func restrictChannels(bot *gotgbot.Bot, ctx *ext.Context) error {
 	chat := ctx.EffectiveChat
 	sender := ctx.EffectiveSender
 
-	if msg.Sender.Id == yourchannelid {
-     		return nil
-	}
+
 	
 	_, err := msg.Delete(bot)
 	if err != nil {
